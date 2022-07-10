@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<title>CryptoLoto</title>
+</head>
+<body>
+	<button type="button" id="playButton" style="position: absolute;top: 32%;color: white;background: rgb(15, 158, 240);box-shadow: 0 0 50px rgb(15, 158, 240);left: 21%; height: 300px; width: 300px;font-size: 30px;border-color: black;border: 5px;border-radius: 50%;font-size: 45px;font-family: 'Bebas Neue', cursive;border-style: solid;border-color: rgba(19, 41, 137, 0.486);animation:brath 7s linear infinite alternate;">+1 Free Ticket</button>
+    <script type="text/javascript" src="https://cdn.applixir.com/applixir.sdk3.0m.js"></script>
+	
+	<div id="applixir_vanishing_div" hidden>                                    
+        <iframe id="applixir_parent" allow="autoplay;fullscreen"></iframe>
+    </div>
+
+    <script type="application/javascript">
+        function adStatusCallback(status) {
+            console.log('Ad Status: ' + status);
+        }
+
+        var playBtn = document.getElementById("playButton");
+        playBtn.onclick = function () {
+			var options = {
+                zoneId: 5103, // Game specific - check your id in the AppLixir web application
+                devId: 6808,  // Game specific - check your id in the AppLixir web application
+                gameId: 7275, // Game specific - check your id in the AppLixir web application
+                adStatusCb: adStatusCallback,
+                userId: "25e7b994-b5ff-49d0-a09b-5eb118855860",
+                custom: "138f4384-0ddb-41dd-b95d-a51203466eb0-e2ea723e-2b23-4fd6-90aa-d4fd1dd74b7e",
+                fallback: 1,  // uncomment this to enable fallback ads, new games/apps/sites usually need this.
+                // verbosity: 5, // uncomment following to see maximum debug info in Dev Tools JS Console
+                vSize: "max",
+				endMsg: 1,
+                btnDelay: 24,   // This sets the 'X' close-button to show up after 24 seconds
+                maxAdt: 31,     // This sets the max time customers must watch an ad before it returns "ad-watched" event
+                vpos: "middle", // This positions the player in the middle for PC & Mobile
+                vposM: "middle",   // This overrides the player position for mobile to top
+            };
+            invokeApplixirVideoUnit(options);
+        }
+
+    </script> 
+		<h2>Prize : 13 000 $</h2>
+		<img id="ticket" src="ticket.png">
+		<h3>42</h3>
+		<label id="Compte" style="position:absolute;display: flex;right: 20px; bottom : 30px;color: white; font-size: 1.3em;font-family: 'Bebas Neue', cursive;"></label>
+	 <script type="text/javascript">
+	 var Affiche=document.getElementById("Compte");
+	 function Rebour() {
+	 var date1 = new Date();
+	 var date2 = new Date ("Jul 11, 2022 00:00:00");
+	 var sec = (date2 - date1) / 1000;
+	 var n = 24 * 3600;
+	 if (sec > 0) {
+	 j = Math.floor (sec / n);
+	 h = Math.floor ((sec - (j * n)) / 3600);
+	 mn = Math.floor ((sec - ((j * n + h * 3600))) / 60);
+	 sec = Math.floor (sec - ((j * n + h * 3600 + mn * 60)));
+	 Affiche.innerHTML = "Next draw : " + h +" h "+ mn +" min "+ sec + " s";
+	 window.status = "Temps restant : " + j +" j "+ h +" h "+ mn +" min "+ sec + " s ";
+	 }
+	 tRebour=setTimeout ("Rebour();", 1000);
+	 }
+	 Rebour();
+	 </script>
+	<header>
+		<nav class="navbar">
+			<a href="#" class="logo">CryptoLoto</a>
+			
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Account</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Referral</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Tickets</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">FAQs</a>
+				</li>
+			</ul>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
+	</header>
+	<script src="script.js"></script>
+</body>
+</html>
