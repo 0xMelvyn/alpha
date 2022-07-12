@@ -1,0 +1,28 @@
+{
+    "name": "CryptoLoto",
+    "short_name" : "CryptoLoto",
+    "start_url" : "index.html",
+    "display" : "standalone",
+    "background_color" : "white",
+    "theme_color" : "#317EFB",
+    "orientation" : "portrait-primary",
+    "icons": [
+        {
+          "src": "icons.png",
+          "type": "image/png",
+          "sizes": "512x512",
+          "purpose": "maskable"
+        },
+        {
+            "src": "icons.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }],
+        "prefer_related_applications": true,
+        "related_applications": [
+        {
+            "platform": "play",
+            "id": "com.google.samples.apps.iosched"
+        }
+        ]
+}
