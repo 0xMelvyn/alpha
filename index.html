@@ -11,8 +11,10 @@
 	<title>CryptoLoto</title>
 </head>
 <body>
-	<button type="button" id="playButton" style="position: absolute;top: 32%;color: white;background: rgb(15, 158, 240);box-shadow: 0 0 50px rgb(15, 158, 240);left: 21%; height: 300px; width: 300px;font-size: 30px;border-color: black;border: 5px;border-radius: 50%;font-size: 45px;font-family: 'Bebas Neue', cursive;border-style: solid;border-color: rgba(19, 41, 137, 0.486);animation:brath 7s linear infinite alternate;">+1 Free Ticket</button>
-    <script type="text/javascript" src="https://cdn.applixir.com/applixir.sdk3.0m.js"></script>
+	<div class="buttoncontainer">
+		<button type="button" id="playButton" style="position: absolute;align-items: center;justify-content: space-between;box-sizing: border-box;color: white;background: rgb(15, 158, 240);box-shadow: 0 0 50px rgb(15, 158, 240);height: 300px; width: 300px;font-size: 30px;border-color: black;border: 5px;border-radius: 50%;font-size: 45px;font-family: 'Bebas Neue', cursive;border-style: solid;border-color: rgba(19, 41, 137, 0.486);animation:brath 7s linear infinite alternate;">+1 Free Ticket</button>
+	</div>
+	<script type="text/javascript" src="https://cdn.applixir.com/applixir.sdk3.0m.js"></script>
 	
 	<div id="applixir_vanishing_div" hidden>                                    
         <iframe id="applixir_parent" allow="autoplay;fullscreen"></iframe>
@@ -45,7 +47,9 @@
         }
 
     </script> 
-		<h2>Prize : 13 000 $</h2>
+		<div class="prizecontainer">
+			<h2>Prize : 13 000 $</h2>
+		</div>
 		<img id="ticket" src="ticket.png">
 		<h3>42</h3>
 		<label id="Compte" style="position:absolute;display: flex;right: 20px; bottom : 30px;color: white; font-size: 1.3em;font-family: 'Bebas Neue', cursive;"></label>
