@@ -69,7 +69,7 @@ a{
 
 .nav-menu{
 	position:fixed;
-	background-size: cover;
+	background-size:cover;
 	right: -100%;
 	top: 0;
 	gap: 0;
@@ -93,13 +93,6 @@ a{
 	right: 0;
 }
 
-.applixir_iframe {
-    border-style: groove;
-    border-color: red;
-    border-width: 6px;
-    border-radius: 7px;
-}
-
 .buttoncontainer {
 	height: 100%;
 	width: 100%;
@@ -110,12 +103,12 @@ a{
 }
 
 .prizecontainer {
-	height: 100%;
+	height: 50%;
 	width: 100%;
 	position:absolute;
 	display: flex;
-    justify-content: center;
 	top: 22%;
+    justify-content: center
 }
 
 h2 {
